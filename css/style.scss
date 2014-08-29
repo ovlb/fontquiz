@@ -139,33 +139,6 @@ html {
 	font-size: 62.5%;
 }
 
-#mainheader {
-	margin-bottom: 20px;
-}
-
-#container {
-	width: 95%;
-	margin: 10px auto;
-	
-	@media (min-width: $size-small) {
-		width: 75%;
-	}
-}
-
-#quiz-content {
-	width: 60%;
-	margin: 10px auto 15px auto;
-	
-	@media (min-width: $size-small) {
-		width: 100%;
-	}
-}
-
-.buchstabe {
-	margin-bottom: 5px;
-	padding: 20px 5px;
-}
-
 select {
 	font-size: 2rem;
 	border: 1px solid black;
@@ -198,4 +171,42 @@ button {
 		outline: none; 
 		box-shadow: 0px 0px 1px 2px lighten($red, 10%);
 	}
+}
+
+#mainheader {
+	margin-bottom: 20px;
+}
+
+#container {
+	width: 95%;
+	margin: 10px auto;
+	
+	@media (min-width: $size-small) {
+		width: 75%;
+	}
+}
+
+#instructions {
+	@media (min-width: $size-medium) {
+		display: inline-block;
+		float: right;
+	}
+}
+
+#quiz-content {
+	width: 60%;
+	margin: 10px auto 15px auto;
+	
+	@media (min-width: $size-small) {
+		width: 100%;
+	}
+	
+	@media (min-width: $size-medium) {
+		display: inline-block;
+	}
+}
+
+.buchstabe {
+	margin-bottom: 5px;
+	padding: 20px 5px;
 }
