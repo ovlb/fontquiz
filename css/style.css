@@ -1,0 +1,154 @@
+/*
+	Variables
+*/
+/* Colors */
+/* Breakpoints */
+/* Content */
+/*
+	Meta
+*/
+p, h6, h5, h4, h3, h2, h1 {
+  -webkit-margin-before: 0;
+  -moz-margin-before: 0;
+  -ms-margin-before: 0;
+  -o-margin-before: 0;
+  margin-before: 0;
+  -webkit-margin-after: 0;
+  -moz-margin-after: 0;
+  -ms-margin-after: 0;
+  -o-margin-after: 0;
+  margin-after: 0;
+  -webkit-margin-start: 0;
+  -moz-margin-start: 0;
+  -ms-margin-start: 0;
+  -o-margin-start: 0;
+  margin-start: 0;
+  -webkit-margin-end: 0;
+  -moz-margin-end: 0;
+  -ms-margin-end: 0;
+  -o-margin-end: 0;
+  margin-end: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/* Colums */
+.col {
+  width: 100%; }
+
+@media (min-width: 31.25rem) {
+  .col {
+    display: inline-block;
+    float: left;
+    padding: 0 .5rem; }
+
+  .fourfiths {
+    width: 80%; }
+
+  .threequartes {
+    width: 75%; }
+
+  .twothirds {
+    width: 66.667%; }
+
+  .half {
+    width: 50%; }
+
+  .third {
+    width: 33.333%; }
+
+  .quarter {
+    width: 25%; }
+
+  .fifth {
+    width: 20%; } }
+/*
+	General Type
+*/
+h1, .h1 {
+  font-size: 3.5em;
+  line-height: 3.75rem;
+  font-weight: 700; }
+
+h2, .h2 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 600; }
+
+h3, .h3 {
+  font-size: 2.75rem;
+  line-height: 3rem;
+  font-weight: 600;
+  margin-bottom: 5px; }
+
+p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 5px; }
+
+/*
+	Content
+*/
+html {
+  font-size: 62.5%; }
+
+#mainheader {
+  margin-bottom: 20px; }
+
+#container {
+  width: 95%;
+  margin: 10px auto; }
+  @media (min-width: 31.25rem) {
+    #container {
+      width: 75%; } }
+
+#quiz-content {
+  width: 60%;
+  margin: 10px auto 15px auto; }
+  @media (min-width: 31.25rem) {
+    #quiz-content {
+      width: 100%; } }
+
+.buchstabe {
+  margin-bottom: 5px;
+  padding: 20px 5px; }
+
+select {
+  font-size: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  background-color: white;
+  transition: box-shadow 0.25s, border 0.25s; }
+  select:focus, select:active {
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 1px 2px #ba0000; }
+
+button {
+  font-size: 2rem;
+  padding: 5px 15px;
+  color: white;
+  background-color: #870000;
+  border: 0;
+  border-radius: 5px;
+  transition: background-color 0.5s, box-shadow 0.25s; }
+  button:hover {
+    background-color: #ba0000; }
+  button:focus, button:active {
+    outline: none;
+    box-shadow: 0px 0px 1px 2px #ba0000; }
