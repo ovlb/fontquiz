@@ -4,6 +4,7 @@
 
 /* Colors */
 $red: rgb(135,0,0);
+$green: rgba(16, 177, 0, 1);
 
 /* Breakpoints */
 $size-small: 31.25rem;
@@ -171,6 +172,18 @@ button {
 		outline: none; 
 		box-shadow: 0px 0px 1px 2px lighten($red, 10%);
 	}
+}
+
+.error {
+	border: 1px solid $red;
+	background-color: lighten($red, 50%);
+	color: $red;
+}
+
+.success {
+	border: 1px solid $green;
+	background-color: lighten($green, 50%);
+	color: $green;
 }
 
 #mainheader {
