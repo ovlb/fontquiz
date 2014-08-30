@@ -196,6 +196,7 @@ button {
 	
 	@media (min-width: $size-small) {
 		width: 75%;
+		max-width: 750px;
 	}
 }
 

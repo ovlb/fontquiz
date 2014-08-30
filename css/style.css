@@ -150,7 +150,8 @@ button {
   margin: 10px auto; }
   @media (min-width: 31.25rem) {
     #container {
-      width: 75%; } }
+      width: 75%;
+      max-width: 750px; } }
 
 @media (min-width: 62.5rem) {
   #instructions {
