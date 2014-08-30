@@ -5,6 +5,9 @@
 /* Breakpoints */
 /* Content */
 /*
+	Mixins
+*/
+/*
 	Meta
 */
 p, h6, h5, h4, h3, h2, h1 {
@@ -78,59 +81,72 @@ p, h6, h5, h4, h3, h2, h1 {
 /*
 	General Type
 */
+html {
+  font-size: 16px; }
+
 h1, .h1 {
-  font-size: 3.5em;
-  line-height: 3.75rem;
+  font-size: 48.88px;
+  font-size: 3.055rem;
+  line-height: 4.277rem;
   font-weight: 700; }
 
 h2, .h2 {
-  font-size: 3rem;
-  line-height: 3.5rem;
+  font-size: 39.1px;
+  font-size: 2.44375rem;
+  line-height: 3.42125rem;
   font-weight: 600; }
 
 h3, .h3 {
-  font-size: 2.75rem;
-  line-height: 3rem;
+  font-size: 31.25px;
+  font-size: 1.95313rem;
+  line-height: 2.73438rem;
   font-weight: 600;
   margin-bottom: 5px; }
 
+h4, .h4 {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 2.1875rem; }
+
 p {
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 400;
   margin-bottom: 5px; }
 
 /*
 	Content
 */
-html {
-  font-size: 62.5%; }
-
 select {
-  font-size: 2rem;
+  font-size: 1rem;
   border: 1px solid black;
   border-radius: 5px;
   width: 100%;
   background-color: white;
-  transition: box-shadow 0.25s, border 0.25s; }
+  -webkit-transition: -webkit-box-shadow 0.25s, border 0.25s;
+          transition: box-shadow 0.25s, border 0.25s; }
   select:focus, select:active {
     outline: none;
     border: none;
-    box-shadow: 0px 0px 1px 2px #ba0000; }
+    -webkit-box-shadow: 0px 0px 1px 2px #ba0000;
+            box-shadow: 0px 0px 1px 2px #ba0000; }
 
 button {
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 5px 15px;
   color: white;
   background-color: #870000;
   border: 0;
   border-radius: 5px;
-  transition: background-color 0.5s, box-shadow 0.25s; }
+  -webkit-transition: background-color 0.5s, -webkit-box-shadow 0.25s;
+          transition: background-color 0.5s, box-shadow 0.25s; }
   button:hover {
     background-color: #ba0000; }
   button:focus, button:active {
     outline: none;
-    box-shadow: 0px 0px 1px 2px #ba0000; }
+    -webkit-box-shadow: 0px 0px 1px 2px #ba0000;
+            box-shadow: 0px 0px 1px 2px #ba0000; }
 
 .error {
   border: 1px solid #870000;
@@ -150,24 +166,37 @@ button {
   margin: 10px auto; }
   @media (min-width: 31.25rem) {
     #container {
-      width: 75%;
+      width: 90%;
       max-width: 750px; } }
 
 @media (min-width: 62.5rem) {
-  #instructions {
+  #instruction {
+    width: 25%;
+    padding-left: 10px;
     display: inline-block;
-    float: right; } }
+    float: left; } }
 
 #quiz-content {
   width: 60%;
   margin: 10px auto 15px auto; }
   @media (min-width: 31.25rem) {
     #quiz-content {
-      width: 100%; } }
+      width: 90%; } }
   @media (min-width: 62.5rem) {
     #quiz-content {
+      width: 75%;
       display: inline-block; } }
 
 .buchstabe {
   margin-bottom: 5px;
-  padding: 20px 5px; }
+  padding: 20px 5px;
+  -webkit-transition: background-color ease-out 0.5s, border ease-out 0.5s, color ease-out 0.5s;
+          transition: background-color ease-out 0.5s, border ease-out 0.5s, color ease-out 0.5s; }
+
+#feedback {
+  margin: 10px 0;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=style.css.map */

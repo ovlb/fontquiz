@@ -11,8 +11,8 @@
 	<script type="text/javascript" src="//use.typekit.net/pbv7ndx.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/quiz.js"></script>
+	<script src="js/jquery-1.11.1.min.js" async></script>
+	<script src="js/quiz.js" async></script>
 </head>
 <body>
 	<div id="container">
@@ -20,7 +20,7 @@
 			<h1>What the e?</h1>
 			<h2>Ein Quiz &uuml;ber kleine Unterschiede</h2>
 		</header>
-		<main id="quiz">
+		<main id="quiz" class="row clearfix">
 			<aside id="instruction">
 				<h3>Was?</h3>
 				<p>Die Aufgabe ist einfach umschrieben: Ordne die angezeigten Glyphen den zugeh&ouml;rigen Schriftfamilien zu.</p>
@@ -261,7 +261,9 @@
 			</section>
 		</main>
 		<footer id="mainfooter">
-			
+			<div class="row clearfix">
+				
+			</div>
 		</footer>
 	</div><!-- Ende Container -->
 </body>

@@ -15,6 +15,15 @@ $size-large: 135rem;
 $border: 5px;
 
 /*
+	Mixins
+*/
+@mixin font($px) {
+	font-size: $px * 1px;
+	font-size: $px / 16 * 1rem;
+	line-height: $px / 16 * 1.4rem;
+}
+
+/*
 	Meta
 */
 
@@ -106,28 +115,32 @@ p, h6, h5, h4, h3, h2, h1 {
 	General Type
 */
 
+html {
+	font-size: 16px;
+}
+
 h1, .h1 {
-	font-size: 3.5em;
-	line-height: 3.75rem;
+	@include font(48.88);
 	font-weight: 700;
 }
 
 h2, .h2 {
-	font-size: 3rem;
-	line-height: 3.5rem;
+	@include font(39.1);
 	font-weight: 600;
 }
 
 h3, .h3 {
-	font-size: 2.75rem;
-	line-height: 3rem;
+	@include font(31.25);
 	font-weight: 600;
 	margin-bottom: 5px;
 }
 
+h4, .h4 {
+	@include font(25);
+}
+
 p {
-	font-size: 2rem;
-	line-height: 2.5rem;
+	@include font(20);
 	font-weight: 400;
 	margin-bottom: 5px;
 }
@@ -136,12 +149,8 @@ p {
 	Content
 */
 
-html {
-	font-size: 62.5%;
-}
-
 select {
-	font-size: 2rem;
+	font-size: 1rem;
 	border: 1px solid black;
 	border-radius: $border;
 	width: 100%;
@@ -156,7 +165,7 @@ select {
 }
 
 button {
-	font-size: 2rem;
+	font-size: 1rem;
 	padding: 5px 15px;
 	color: white;
 	background-color: $red;
@@ -195,15 +204,17 @@ button {
 	margin: 10px auto;
 	
 	@media (min-width: $size-small) {
-		width: 75%;
+		width: 90%;
 		max-width: 750px;
 	}
 }
 
-#instructions {
+#instruction {
 	@media (min-width: $size-medium) {
+		width: 25%;
+		padding-left: 10px;
 		display: inline-block;
-		float: right;
+		float: left;
 	}
 }
 
@@ -212,10 +223,11 @@ button {
 	margin: 10px auto 15px auto;
 	
 	@media (min-width: $size-small) {
-		width: 100%;
+		width: 90%;
 	}
 	
 	@media (min-width: $size-medium) {
+		width: 75%;
 		display: inline-block;
 	}
 }
@@ -223,4 +235,12 @@ button {
 .buchstabe {
 	margin-bottom: 5px;
 	padding: 20px 5px;
+	transition: background-color ease-out 0.5s, border ease-out 0.5s, color ease-out 0.5s;
+}
+
+#feedback {
+	margin: 10px 0;
+	padding: 5px 0;
+	text-align: center;
+	border-radius: 5px;
 }
