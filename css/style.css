@@ -3,7 +3,6 @@
 */
 /* Colors */
 /* Breakpoints */
-/* Content */
 /*
 	Mixins
 */
@@ -85,41 +84,41 @@ html {
   font-size: 16px; }
 
 h1, .h1 {
-  font-size: 48.88px;
   font-size: 3.055rem;
   line-height: 4.277rem;
-  font-weight: 700; }
+  font-weight: 700;
+  letter-spacing: 0.0625rem; }
 
 h2, .h2 {
-  font-size: 39.1px;
   font-size: 2.44375rem;
   line-height: 3.42125rem;
   font-weight: 600; }
 
 h3, .h3 {
-  font-size: 31.25px;
   font-size: 1.95313rem;
   line-height: 2.73438rem;
   font-weight: 600;
   margin-bottom: 5px; }
 
 h4, .h4 {
-  font-size: 25px;
   font-size: 1.5625rem;
   line-height: 2.1875rem; }
 
 p {
-  font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 400;
-  margin-bottom: 5px; }
+  margin-bottom: 7px; }
+
+a {
+  color: #ba0000; }
 
 /*
 	Content
 */
 select {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   border: 1px solid black;
   border-radius: 5px;
   width: 100%;
@@ -128,15 +127,16 @@ select {
           transition: box-shadow 0.25s, border 0.25s; }
   select:focus, select:active {
     outline: none;
-    border: none;
+    border: 1px solid white;
     -webkit-box-shadow: 0px 0px 1px 2px #ba0000;
             box-shadow: 0px 0px 1px 2px #ba0000; }
 
 button {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   padding: 5px 15px;
   color: white;
-  background-color: #870000;
+  background-color: #6e0000;
   border: 0;
   border-radius: 5px;
   -webkit-transition: background-color 0.5s, -webkit-box-shadow 0.25s;
@@ -172,13 +172,19 @@ button {
 @media (min-width: 62.5rem) {
   #instruction {
     width: 25%;
-    padding-left: 10px;
+    padding-left: 0px;
     display: inline-block;
     float: left; } }
+#instruction h3 {
+  font-size: 1.5625rem;
+  line-height: 2.1875rem; }
+#instruction p {
+  font-size: 1.125rem;
+  line-height: 1.575rem; }
 
 #quiz-content {
   width: 60%;
-  margin: 10px auto 15px auto; }
+  margin: 0 auto 0 auto; }
   @media (min-width: 31.25rem) {
     #quiz-content {
       width: 90%; } }
@@ -195,8 +201,33 @@ button {
 
 #feedback {
   margin: 10px 0;
-  padding: 5px 0;
+  padding: 7px 0 0 0;
   text-align: center;
   border-radius: 5px; }
+
+#mainfooter {
+  border-top: 3px solid rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  margin-bottom: 30px; }
+  #mainfooter h4 {
+    font-size: 1.5625rem;
+    line-height: 2.1875rem; }
+  #mainfooter p {
+    font-size: 1.125rem;
+    line-height: 1.575rem; }
+  #mainfooter img {
+    width: 10%;
+    margin: 0 auto;
+    display: block; }
+  @media (min-width: 62.5rem) {
+    #mainfooter h4 {
+      font-size: 1.125rem;
+      line-height: 1.575rem; }
+    #mainfooter p {
+      font-size: 1rem;
+      line-height: 1.4rem;
+      text-align: center; }
+    #mainfooter img {
+      width: 10%; } }
 
 /*# sourceMappingURL=style.css.map */
