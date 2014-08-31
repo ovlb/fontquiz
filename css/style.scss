@@ -8,7 +8,7 @@ $green: rgb(16, 177, 0);
 
 /* Breakpoints */
 $size-small: 31.25rem;
-$size-medium: 62.5rem;
+$size-medium: 56.25rem;
 $size-large: 135rem;
 
 /*
@@ -166,7 +166,10 @@ select {
 
 button {
 	@include font(20);
-	padding: 5px 15px;
+	font-weight: 300;
+	width: 20%;
+	margin: 0 auto;
+	padding: 10px 15px;
 	color: white;
 	background-color: darken($red, 5%);
 	border: 0;
@@ -205,14 +208,18 @@ button {
 	
 	@media (min-width: $size-small) {
 		width: 90%;
-		max-width: 750px;
 	}
+	
+	@media (min-width: $size-medium) {
+		width: 60%;
+		max-width: 780px;
+	}	
 }
 
 #instruction {
 	@media (min-width: $size-medium) {
 		width: 25%;
-		padding-left: 0px;
+		padding: 0 5px 0 0;
 		display: inline-block;
 		float: left;
 	}
@@ -227,7 +234,7 @@ button {
 
 #quiz-content {
 	width: 60%;
-	margin: 0 auto 0 auto;
+	margin: 0 auto;
 	
 	@media (min-width: $size-small) {
 		width: 90%;
@@ -279,10 +286,6 @@ button {
 		p {
 			@include font(16);
 			text-align: center;
-		}
-		
-		img {
-			width: 10%;
 		}
 	}
 }
