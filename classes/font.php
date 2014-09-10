@@ -17,6 +17,7 @@ class Font {
 	
 	public function __construct( $data=array() ) {
     if ( isset( $data['idfonts'] ) ) $this->idfonts = (int) $data['idfonts'];
+    if ( isset( $data['name'] ) ) $this->name = preg_replace ( "/[^\.\,\-\_\'\"\@\?\!\:\$ a-zA-Z0-9()]/", "", $data['name'] );
     if ( isset( $data['style'] ) ) $this->style = preg_replace ( "/[^\.\- a-zA-Z0-9()]/", "", $data['style'] );
     if ( isset( $data['letter_e'] ) ) $this->letter_e = preg_replace ( "/[^\.\,\-\_\'\"\@\?\!\:\$ a-zA-Z0-9()]/", "", $data['letter_e'] );
     //if ( isset( $data['content'] ) ) $this->content = $data['content'];
@@ -94,7 +95,7 @@ class Font {
 		$conn = new PDO( DB_DSN, DB_USERNAME, DB_PASSWORD );
 		$sql = "INSERT INTO fonts (name, style, letter_e) VALUES (:name, :style, :letter_e)";
 		$st = $conn->prepare ( $sql );
-		$st->bindValue( ":name", $this->title, PDO::PARAM_STR );
+		$st->bindValue( ":name", $this->name, PDO::PARAM_STR );
 		$st->bindValue(':style', $this->style, PDO::PARAM_STR);
 		$st->bindValue( ":letter_e", $this->summary, PDO::PARAM_STR );
 		$st->execute();
@@ -115,7 +116,7 @@ class Font {
 		$sql = "UPDATE fonts SET name=:name,, style=:style, letter_e=:letter_e WHERE idfonts = :idfonts";
 		$st = $conn->prepare ( $sql );
 		$st->bindValue( ":name", $this->name, PDO::PARAM_STR );
-		$st->bindValue( ":style", $this->name, PDO::PARAM_STR );
+		$st->bindValue( ":style", $this->style, PDO::PARAM_STR );
 		$st->bindValue( ":letter_e", $this->letter_e, PDO::PARAM_STR );
 		$st->bindValue( ":idfonts", $this->idfonts, PDO::PARAM_INT );
 		$st->execute();

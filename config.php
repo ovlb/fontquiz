@@ -1,13 +1,13 @@
 <?php
 // Disable this in your live environment, for debugging purposes only
-ini_set("display_errors", true);
+ini_set("display_errors", 'On');
+error_reporting(E_ALL);
 
 // You may want to change this to your own timezone
 date_default_timezone_set("Europe/Berlin");
 
 // You will have to add your own db credentials to get this up and running	
-define("DB_DSN", "mysql:host=host-fontquiz;dbname=fonts")
-define("mySQLHost", "host-fontquiz")
+define("DB_DSN", "mysql:host=host-fontquiz;dbname=fonts");
 define("mySQLUser", "fontquiz");
 define("mySQLPassword", "MySQLPassword");
 define("mySQLDatabase", "fonts");

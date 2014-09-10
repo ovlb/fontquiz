@@ -7,7 +7,7 @@
 		<div class="row clearfix">
 			<div class="col third" id="input-number">
 				<h4>Number</h4>
-				<input type="range" name="input-number" min="3" max="12" step="3">
+				<input type="range" name="input-number" min="3" max="15" step="3">
 			</div><!-- End #input-number -->
 			<div class="col third" id="input-letter">
 				<h4>Which</h4>
@@ -17,9 +17,9 @@
 			</div><!-- End #input-letter -->
 			<div class="col third" id="input-type">
 				<h4>What?</h4>
-				<input id="fonts-both" type="radio" name="fonts-both" value="both"><label for="fonts-both">Both</label>
-				<input id="fonts-serif" type="radio" name="fonts-serif" value="serif"><label for="fonts-serif">Serif</label>
-				<input id="fonts-sans" type="radio" name="fonts-sans" value="sans"><label for="fonts-sans">Sans-serif</label>
+				<input id="fonts-both" type="radio" name="font-style" value="both"><label for="fonts-both">Both</label>
+				<input id="fonts-serif" type="radio" name="font-style" value="serif"><label for="fonts-serif">Serif</label>
+				<input id="fonts-sans" type="radio" name="font-style" value="sans"><label for="fonts-sans">Sans-serif</label>
 			</div><!-- Ende #input-type -->
 		</div><!-- End row selects -->
 	</section>

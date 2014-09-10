@@ -137,7 +137,7 @@ h4, .h4 {
 	@include font(25);
 }
 
-p {
+p, label, input {
 	@include font(20);
 	font-weight: 400;
 	margin-bottom: 7px;
@@ -165,8 +165,8 @@ select {
 	}
 }
 
-button {
-	@include font(20);
+button, input[type=submit] {
+	/*@include font(20);*/
 	font-weight: 300;
 	width: 20%;
 	margin: 0 auto;

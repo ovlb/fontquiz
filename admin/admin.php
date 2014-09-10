@@ -46,16 +46,16 @@ function login() {
 			header('Location: admin.php');
 		} else {
 			$results['errorMessage'] = 'The username and/or the password were wrong. Would you mind trying again?';
-			require(TEMPLATE_PATH . '/admin/login.php');
+			require('login.php');
 		}
 	} else {
-		require(TEMPLATE_PATH . '/admin/login.php');
+		require('login.php');
 	}
 }
 
 // On logout, unset the session and load admin.php
 function logout() {
-	unset $_SESSION['username'];
+	session_unset();
 	header('Location: admin.php)';
 }
 
@@ -73,7 +73,7 @@ function newFont() {
 		header('Location: admin.php');
 	} else {
 		$results['article'] = new Font;
-		require(TEMPLATE_PATH . '/admin/edit.php');
+		require('edit.php');
 	}
 }
 
@@ -98,7 +98,7 @@ funtion editFont() {
 		header('location: admin.php');
 	} else {
 		$results['article'] = Font::getById( int()$_GET['fontId'] );
-		require(TEMPLATE_PATH . '/admin/edit.php');
+		require('edit.php');
 	}
 }
 
@@ -128,6 +128,6 @@ function listFonts() {
 		if ( $_GET['status'] == "articleDeleted" ) $results['statusMessage'] = "Article deleted.";
 	}
  
-	require( TEMPLATE_PATH . "/admin/listArticles.php" );
+	require('list.php');
 }
 ?>
