@@ -4,6 +4,19 @@
 	<title>What the e?</title>
 	<meta charset="utf-8">
 	
+	<meta name="description" content="A quiz of subtle differences">
+	
+	<meta property="og:title" content="What the e?">
+	<meta property="og:description" content="A quiz of subtle differences">
+	<meta property="og:url" content="http://fontquiz.ovlb.net">
+	<meta property="og:image" content="">
+	
+	<meta name="twitter:title" content="What the e?">
+	<meta name="twitter:description" content="A quiz of subtle differences">
+	<meta name="twitter:url" content="http://fontquiz.ovlb.net">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:creator" content="@o_v_l_b">
+	
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	
@@ -18,8 +31,6 @@
 	
 	<script src="js/quiz.js" defer></script>
 	
-	<!-- Load DB connection -->
-	<? require_once './connect.php'; ?>
 </head>
 <body>
 	<div id="container">
