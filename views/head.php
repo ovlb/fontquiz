@@ -17,6 +17,9 @@
 	<script>try{Typekit.load();}catch(e){}</script>
 	
 	<script src="js/quiz.js" defer></script>
+	
+	<!-- Load DB connection -->
+	<? require_once './connect.php'; ?>
 </head>
 <body>
 	<div id="container">
