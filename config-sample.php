@@ -11,7 +11,7 @@
 	------------ */
 	
 	// Enter your details below and save the file as config.php to set the database up
-	define('DB_DSN', 'mysql:host=HOST;dbame=NAME OF DB');
+	define('DB_DSN', 'mysql:host=HOST;dbname=NAME OF DB;charset=utf8');
 	define('DB_USERNAME', 'USER');
 	define('DB_PASS', 'PASSWORD');
 	
