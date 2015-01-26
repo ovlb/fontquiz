@@ -23,27 +23,9 @@ $size-large: 135rem;
 	Meta
 */
 
-p, h6, h5, h4, h3, h2, h1 {
-	-webkit-margin-before: 0;
-	-moz-margin-before: 0;
-	-ms-margin-before: 0;
-	-o-margin-before: 0;
-	margin-before: 0;
-	-webkit-margin-after: 0;
-	-moz-margin-after: 0;
-	-ms-margin-after: 0;
-	-o-margin-after: 0;
-	margin-after: 0;
-	-webkit-margin-start: 0;
-	-moz-margin-start: 0;
-	-ms-margin-start: 0;
-	-o-margin-start: 0;
-	margin-start: 0;
-	-webkit-margin-end: 0;
-	-moz-margin-end: 0;
-	-ms-margin-end: 0;
-	-o-margin-end: 0;
-	margin-end: 0;
+@viewport {
+   width: device-width;
+   zoom: 1;
 }
 
 *, *:before, *:after {
@@ -192,6 +174,12 @@ button {
 	color: $red;
 }
 
+.warning {
+	border: 1px solid darken(yellow, 20%);
+	background-color: lighten(yellow, 20%);
+	color: black;
+}
+
 .success {
 	border: 1px solid $green;
 	background-color: lighten($green, 50%);
@@ -246,7 +234,7 @@ button {
 	}
 }
 
-.buchstabe {
+.quiz-item {
 	margin-bottom: 5px;
 	padding: 20px 5px;
 	transition: background-color ease-out 0.5s, border ease-out 0.5s, color ease-out 0.5s;

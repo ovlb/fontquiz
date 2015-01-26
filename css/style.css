@@ -9,28 +9,9 @@
 /*
 	Meta
 */
-p, h6, h5, h4, h3, h2, h1 {
-  -webkit-margin-before: 0;
-  -moz-margin-before: 0;
-  -ms-margin-before: 0;
-  -o-margin-before: 0;
-  margin-before: 0;
-  -webkit-margin-after: 0;
-  -moz-margin-after: 0;
-  -ms-margin-after: 0;
-  -o-margin-after: 0;
-  margin-after: 0;
-  -webkit-margin-start: 0;
-  -moz-margin-start: 0;
-  -ms-margin-start: 0;
-  -o-margin-start: 0;
-  margin-start: 0;
-  -webkit-margin-end: 0;
-  -moz-margin-end: 0;
-  -ms-margin-end: 0;
-  -o-margin-end: 0;
-  margin-end: 0; }
-
+@viewport {
+  width: device-width;
+  zoom: 1; }
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -95,8 +76,8 @@ h2, .h2 {
   font-weight: 600; }
 
 h3, .h3 {
-  font-size: 1.95313rem;
-  line-height: 2.73438rem;
+  font-size: 1.953125rem;
+  line-height: 2.734375rem;
   font-weight: 600;
   margin-bottom: 5px; }
 
@@ -123,13 +104,11 @@ select {
   border-radius: 5px;
   width: 100%;
   background-color: white;
-  -webkit-transition: -webkit-box-shadow 0.25s, border 0.25s;
-          transition: box-shadow 0.25s, border 0.25s; }
+  transition: box-shadow 0.25s, border 0.25s; }
   select:focus, select:active {
     outline: none;
     border: 1px solid white;
-    -webkit-box-shadow: 0px 0px 1px 2px #ba0000;
-            box-shadow: 0px 0px 1px 2px #ba0000; }
+    box-shadow: 0px 0px 1px 2px #ba0000; }
 
 button {
   font-size: 1.25rem;
@@ -142,19 +121,22 @@ button {
   background-color: #6e0000;
   border: 0;
   border-radius: 5px;
-  -webkit-transition: background-color 0.5s, -webkit-box-shadow 0.25s;
-          transition: background-color 0.5s, box-shadow 0.25s; }
+  transition: background-color 0.5s, box-shadow 0.25s; }
   button:hover {
     background-color: #ba0000; }
   button:focus, button:active {
     outline: none;
-    -webkit-box-shadow: 0px 0px 1px 2px #ba0000;
-            box-shadow: 0px 0px 1px 2px #ba0000; }
+    box-shadow: 0px 0px 1px 2px #ba0000; }
 
 .error {
   border: 1px solid #870000;
   background-color: #ff8787;
   color: #870000; }
+
+.warning {
+  border: 1px solid #999900;
+  background-color: #ffff66;
+  color: black; }
 
 .success {
   border: 1px solid #10b100;
@@ -199,11 +181,10 @@ button {
       width: 75%;
       display: inline-block; } }
 
-.buchstabe {
+.quiz-item {
   margin-bottom: 5px;
   padding: 20px 5px;
-  -webkit-transition: background-color ease-out 0.5s, border ease-out 0.5s, color ease-out 0.5s;
-          transition: background-color ease-out 0.5s, border ease-out 0.5s, color ease-out 0.5s; }
+  transition: background-color ease-out 0.5s, border ease-out 0.5s, color ease-out 0.5s; }
 
 #feedback {
   margin: 10px 0;
@@ -233,5 +214,3 @@ button {
       font-size: 1rem;
       line-height: 1.4rem;
       text-align: center; } }
-
-/*# sourceMappingURL=style.css.map */

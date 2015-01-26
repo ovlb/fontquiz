@@ -1,4 +1,8 @@
 <?php
+	/*
+		Fill out the below parameters and save this file als config.php
+	*/
+	
 	/* ------------
 		MISC
 	------------ */
@@ -10,7 +14,7 @@
 		DATABASE
 	------------ */
 	
-	// Enter your details below and save the file as config.php to set the database up
+	// Enter your details below
 	define('DB_DSN', 'mysql:host=HOST;dbname=NAME OF DB;charset=utf8');
 	define('DB_USERNAME', 'USER');
 	define('DB_PASS', 'PASSWORD');
@@ -18,6 +22,6 @@
 	try {
 		$pdo = new PDO (DB_DSN, DB_USERNAME, DB_PASS);
 	} catch(PDOException $e) {
-		echo('Ooops. Es gab einen Fehler.' . $e->getMessage());
+		echo('Ooops. Es gab einen Fehler. ' . $e->getMessage());
 	}
 ?>

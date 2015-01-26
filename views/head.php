@@ -3,6 +3,7 @@
 <head>
 	<title>What the e?</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<meta name="description" content="A quiz of subtle differences">
 	
@@ -29,6 +30,7 @@
 	<script src="//use.typekit.net/pbv7ndx.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	
+	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/quiz.js" defer></script>
 	
 </head>

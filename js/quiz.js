@@ -1,5 +1,9 @@
+$(document).ready(function() {
 // Die Loesungen in der Reihenfolge, in der sie im Quelltext stehen
-var results = ['meta', 'rotis', 'garamond', 'minion', 'palatino', 'avenir', 'univers', 'din', 'futura', 'chaparral', 'fira', 'utopia'];
+// var results = ['meta', 'rotis', 'garamond', 'minion', 'palatino', 'avenir', 'univers', 'din', 'futura', 'chaparral', 'fira', 'utopia'];
+
+var items = JSON.parse('<?= $stmt_array_json; ?>');
+console.log(items[2].name);
 
 // Variable, um zu gucken, ob es Fehler gibt, in der check-Funktion benoetigt
 var errors = 0;
@@ -11,15 +15,15 @@ var newclass;
 // Die Richtigkeit der Antworten ueberpruefen, mit (index) kann beim Aufrufen der Funktion eine Variable uebergeben werden
 function checkAnswer(index) {
 	// In dieser Variable wird der Wert des jeweiligen select-Feldes gespeichert; index+1, da die erste ID im HTML 1 ist, der erste Wert in Javascript aber 0
-	var answer = document.getElementById('schriftwahl-' + (index+1)).value;
+	var answer = document.getElementById('quiz-answer-' + (index+1)).value;
 	
 	// Wenn der Wert des select-Felds von dem im results-Arrys gespeicherten abweicht, werden die Fehler hochgezaehlt und das beinhaltende div mit der Fehlerklasse versehen
 	// Wenn die Antwort richtig ist, wird das div mit der Erfolgsklasse eingefaerbt
 	if (answer != results[index]) {
 		errors++;
-		document.getElementById('buchstabe-' + (index+1)).setAttribute('class', 'buchstabe col third error');
+		document.getElementById('quiz-item-' + (index+1)).setAttribute('class', 'item col third error');
 	} else {
-		document.getElementById('buchstabe-' + (index+1)).setAttribute('class', 'buchstabe col third success');
+		document.getElementById('quiz-item-' + (index+1)).setAttribute('class', 'item col third success');
 	}
 }
 
@@ -46,3 +50,4 @@ function check() {
 	}
 	giveFeedback(msg, newclass);
 }
+});
